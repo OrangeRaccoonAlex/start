@@ -1,0 +1,108 @@
+{
+  "name": "int2019",
+  "version": "1.0.0",
+  "description": "HTML tenplate for International 2019",
+  "license": "ISC",
+  "scripts": {
+    "build": "grunt build",
+    "build:dev": "grunt default",
+    "start": "grunt dev",
+    "lint": "eslint ./src/js/**/*.js && stylelint ./src/scss/**/*.scss",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raccoonAndy/int2019.git"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "autoprefixer": "^9.4.5",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babelify": "^10.0.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "grunt": "^1.0.3",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-browserify": "^5.3.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-imagemin": "^3.1.0",
+    "grunt-contrib-uglify-es": "github:gruntjs/grunt-contrib-uglify#harmony",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-sass": "^3.0.2",
+    "lint-staged": "^8.1.7",
+    "load-grunt-tasks": "^4.0.0",
+    "node-sass": "^4.12.0",
+    "postcss-opacity": "^5.0.0",
+    "pre-commit": "^1.2.2",
+    "stylelint": "^10.0.1"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "stylelint": {
+    "rules": {
+      "block-closing-brace-newline-after": "always",
+      "block-closing-brace-newline-before": "always",
+      "block-opening-brace-newline-after": "always",
+      "block-no-empty": true,
+      "color-hex-case": "lower",
+      "color-no-invalid-hex": true,
+      "comment-no-empty": true,
+      "comment-empty-line-before": [
+        "always",
+        {
+          "ignore": [
+            "stylelint-commands",
+            "after-comment"
+          ]
+        }
+      ],
+      "declaration-colon-space-after": "always",
+      "font-weight-notation": "numeric",
+      "max-empty-lines": 4,
+      "no-extra-semicolons": true,
+      "rule-empty-line-before": [
+        "always",
+        {
+          "except": [
+            "first-nested"
+          ],
+          "ignore": [
+            "after-comment"
+          ]
+        }
+      ],
+      "selector-attribute-brackets-space-inside": "never",
+      "selector-list-comma-newline-after": "always-multi-line",
+      "selector-list-comma-newline-before": "always-multi-line",
+      "selector-max-attribute": 4,
+      "selector-max-class": 4,
+      "selector-max-combinators": 4,
+      "selector-max-compound-selectors": 4,
+      "selector-max-id": 2,
+      "selector-max-pseudo-class": 4,
+      "selector-type-case": "lower",
+      "string-quotes": "single",
+      "unit-whitelist": [
+        "vh",
+        "vw",
+        "px",
+        "em",
+        "rem",
+        "%",
+        "s"
+      ]
+    }
+  }
+}
